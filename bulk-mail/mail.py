@@ -73,8 +73,3 @@ for index,col in df.iterrows():
 
 
 print("Failed Mails:"+failed)
-
-
-
-
-
