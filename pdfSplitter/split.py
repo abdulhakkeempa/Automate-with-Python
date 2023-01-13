@@ -1,4 +1,4 @@
-from PyPDF2 import PdfFileWriter, PdfFileReader
+from PyPDF2 import PdfWriter, PdfReader
 
 fileName = [
     "Dr.Anil Raj" ,
@@ -17,10 +17,12 @@ fileName = [
     "Mr.Muhammed Anees V"
 ]
 
-inputpdf = PdfFileReader(open("Appreciation.pdf", "rb"))
+inputpdf = PdfReader(open("Appreciation.pdf", "rb"))
 
-for i in range(inputpdf.numPages):
-    output = PdfFileWriter()
-    output.addPage(inputpdf.getPage(i))
+
+for i in range(len(inputpdf.pages)):
+
+    output = PdfWriter()
+    output.add_page(inputpdf.pages[i])
     with open(f"output/{fileName[i]}.pdf","wb") as outputStream:
         output.write(outputStream)
