@@ -1,17 +1,28 @@
-# Automate-with-Python
-Build some projects in python which automates boring tasks
-## General Configurations for running the file
-### 1. Create a virtual environment and activate it
+# Automate with Python
+Python has been used to automate some tedious tasks.
+
+## General Configurations for Folders
+### 1. Create a Virtual Environment and Activate It
 ```
 python -m venv venv
 ```
 
-### 2. Install the required dependencies
+### 2. Install the Required Dependencies
 ```
 pip install -r requirements.txt
 ```
-### 3. Follow the steps in specied in the project folder
+### 3. Follow the Steps Specified in the Project Folder
 
+## Projects
 
-## 1. Certificate Generator
-Dynamic Certificate Generator created using python.
+### 1. Certificate Generator
+A dynamic certificate generator created using Python.
+
+### 2. Bulk Mail
+This will allow you to send custom emails to multiple users from your account.
+
+### 3. PDF Splitter
+This will split a multi-page PDF file into single PDFs.
+
+### 4. Invoice Generator
+This will help you automate the creation of multiple invoices given a CSV
